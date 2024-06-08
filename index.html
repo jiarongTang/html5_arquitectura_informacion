@@ -19,6 +19,7 @@
                 <li><a href="#shiny">Shiny</a></li>
                 <li><a href="#megaevolucion">Megaevolución</a></li>
                 <li><a href="#gigamax">Gigamax</a></li>
+                <li><a href="#formulario">Formulario</a></li>
             </ul>
         </nav>
     </header>
@@ -405,13 +406,41 @@
                 </p>
             </section>
         </article>
-        <form action="datosUsuario.com" method="get">
-
+        <h2>Formulario</h2>
+        <form action="registro_Pokemon_favorito.com" method="post" id="formulario"></form>
+            <p>1.¿Cuál de estos pokemon iniciales tienes?</p>
+            <input type="checkbox" name="pokemon[]" value="bulbasaur"> Bulbasaur
+            <input type="checkbox" name="pokemon[]" value="charmander"> Charmander
+            <input type="checkbox" name="pokemon[]" value="squirtle"> Squirtle
+            <p>2.¿Has conseguido alguno de los pokemon que has seleccionado en su versión shiny?
+                <br>Si la respuesta es <em>Sí</em> escribe cuales tienes.
+            </p>
+            <input type="radio" name="respuesta" id="radio1" value="si">
+            <label for="radio1">Sí</label>
+            <input type="radio" name="respuesta" id="radio2" value="no">
+            <label for="radio2">No</label>
+            <br><textarea name="pokemonShiny"cols="50" rows="4" placeholder="Escribe tu respuesta..." required></textarea>
+            <p>3.¿Has conseguido la megaevolucíon de alguno de estos pokemon? 
+                <br>Si la respuesta es <em>Sí</em> escribe abajo cuál y en qué juego.
+            </p>
+            <input type="radio" name="respuesta" id="radio3" value="si">
+            <label for="radio3">Sí</label>
+            <input type="radio" name="respuesta" id="radio4" value="no">
+            <label for="radio4">No</label>
+            <br><textarea nam="pokemonMega" rows="4" cols="50" placeholder="Escribe tu respuesta..." required></textarea>
+            <p>4.¿Tienes alguno de ellos en su forma Gigamax? 
+                <br>Si la respuesta es <em>Sí</em> escribe cuál tienes.
+            </p>
+            <input type="radio" name="respuesta" id="radio5" value="si">
+            <label for="radio5">Sí</label>
+            <input type="radio" name="respuesta" id="radio6" value="no">
+            <label for="radio6">No</label>
+            <br><textarea nam="pokemonGigamax" rows="4" cols="50" placeholder="Escribe tu respuesta..." required></textarea>
+            <br><input type="submit" value="Enviar">
         </form>
     </main>
     <footer>
-        <h2>Información de contacto</h2>
-        <p></p>
+        
     </footer>
 </body>
 </html>
